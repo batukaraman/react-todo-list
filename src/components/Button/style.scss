@@ -1,0 +1,42 @@
+.btn {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px;
+  background-color: transparent;
+  font-weight: 500;
+  transition: all 0.3s;
+
+  display: inline-grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  user-select: none;
+
+  &--primary {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+
+    &:hover {
+      border-color: var(--primaryColor);
+      background-color: transparent;
+      color: var(--primaryColor);
+    }
+  }
+
+  &--secondary {
+    border-color: var(--primaryColor);
+    background-color: transparent;
+    color: var(--primaryColor);
+    &:hover {
+      background-color: var(--primaryColor);
+      color: var(--whiteColor);
+    }
+  }
+
+  &:disabled {
+    background-color: gray;
+    pointer-events: none;
+  }
+}

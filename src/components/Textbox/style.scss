@@ -1,0 +1,17 @@
+.textbox {
+  flex: 1;
+
+  & input {
+    border: 1px solid var(--primaryColor100);
+    border-radius: 4px;
+    padding: 8px;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+
+    &:focus {
+      border: 1px solid var(--primaryColor);
+    }
+  }
+}

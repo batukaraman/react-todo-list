@@ -1,0 +1,54 @@
+.listbox {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #ededf4;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.listbox__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration-line: none;
+  text-decoration-color: transparent;
+  transition: all 0.4s;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.listbox__item.checked {
+  color: rgba($color: #000000, $alpha: 0.7);
+  text-decoration-line: line-through;
+  text-decoration-color: #000;
+}
+
+.listbox__body {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.listbox__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.listbox__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.listbox__subtitle {
+  font-size: 14px;
+}
+
+.listbox__options {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

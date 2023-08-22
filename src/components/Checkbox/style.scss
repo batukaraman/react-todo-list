@@ -1,0 +1,36 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+  cursor: pointer;
+
+  span {
+    border: 1px solid gray;
+    padding: 4px;
+    display: inline-flex;
+    border-radius: 4px;
+    color: gray;
+    user-select: none;
+
+    * {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s;
+    }
+  }
+
+  &.checked {
+    color: var(--primaryColor);
+
+    span {
+      border: 1px solid var(--primaryColor);
+      color: var(--primaryColor);
+    }
+
+    * {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

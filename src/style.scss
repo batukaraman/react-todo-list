@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: rgb(100, 101, 240);
+  --primaryColor100: rgb(186, 186, 207);
+  --secondaryColor: rgb(103, 104, 173);
+  --whiteColor: rgb(255, 255, 255);
+  --grayColor: rgb(92, 92, 92);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--primaryColor100);
+  transition: color 0.4s;
+  padding: 0;
+}
+
+.close-btn:hover {
+  color: var(--primaryColor);
+}
+
+body {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  padding: 16px;
+}
+
+.empty {
+  padding: 16px;
+  background-color: #ededf4;
+  color: var(--primaryColor100);
+  font-size: 24px;
+  text-align: center;
+  border-radius: 4px;
+  user-select: none;
+}
